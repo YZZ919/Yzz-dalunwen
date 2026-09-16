@@ -1,0 +1,37 @@
+{
+  "status": "trained_cleanroom_gray_dce_euroc_summary",
+  "label": "dual_gray_dce_reference_official_tracking_v2",
+  "sequences_requested": [
+    "V1_03_difficult"
+  ],
+  "completed": 1,
+  "successful": 1,
+  "success_rate": 1.0,
+  "mean_ate_rmse_se3_m": 0.19489212108637982,
+  "median_ate_rmse_se3_m": 0.19489212108637982,
+  "rows": [
+    {
+      "sequence": "V1_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 995,
+      "time_coverage": 0.9338919977909476,
+      "ate_rmse_se3_m": 0.19489212108637982,
+      "ate_mean_se3_m": 0.17024438778802115,
+      "baseline_ate_rmse_se3_m": 0.2505984771310602,
+      "tw_ate_rmse_se3_m": 0.2804728289606398,
+      "enhancement_frames": 2149,
+      "enhancement_processed_frames": 2149,
+      "enhancement_mean_inference_seconds": 0.0049593768264319235,
+      "mean_input_intensity": 114.5655176019421,
+      "mean_output_intensity": 162.64414167179234,
+      "bnr_frames": 1071,
+      "frames_with_bnr_removal": 102,
+      "enhanced_features_before": 73426,
+      "enhanced_features_removed": 258,
+      "reduction_vs_baseline_pct": 22.229327441421994,
+      "reduction_vs_tw_pct": 30.513011970321717
+    }
+  ],
+  "warning": "This is a clean-room trained checkpoint, not the unpublished author IR-VIO model."
+}

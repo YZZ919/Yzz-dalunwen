@@ -1,0 +1,29 @@
+{
+  "status": "gray_checkpoint_range_audit_complete",
+  "checkpoint": "/mnt/d/大论文实验/IR-VIO的复现/checkpoints/gray_dce_cleanroom_v2/gray_reference_paper_mirror_resize256/best_val.pth",
+  "data_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray",
+  "split": "val",
+  "images": 47,
+  "resize": [
+    256,
+    256
+  ],
+  "device": "cuda",
+  "finite": true,
+  "input_mean": 0.14299334133876132,
+  "output_mean": 0.5336993019631568,
+  "input_std": 0.15341551490920655,
+  "output_std": 0.20020075903293935,
+  "input_gradient_energy": 0.002785103429329304,
+  "output_gradient_energy": 0.01357294222775926,
+  "gradient_energy_ratio": 4.873406884938501,
+  "input_low_saturation_fraction": 0.13219630464594415,
+  "input_high_saturation_fraction": 0.003633539727393617,
+  "output_low_saturation_fraction": 0.0520477294921875,
+  "output_high_saturation_fraction": 0.004866255090591755,
+  "curve_abs_max_mean": 0.8533022923672453,
+  "curve_abs_max_max": 0.9989835619926453,
+  "checkpoint_epoch": 100,
+  "checkpoint_val_loss": 0.07609364865942204,
+  "warning": "These are split-level enhancement diagnostics, not trajectory metrics or evidence of author IR-VIO weights."
+}

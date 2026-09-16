@@ -1,0 +1,23 @@
+sequence,method,data_source,replay,estimate_poses,matched_poses,time_coverage,ate_rmse_se3_m,ate_rmse_sim3_m,pipeline_success,metric_pass_ate_lt_1m
+MH_01_easy,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1828,1817,0.9926650385,0.1516878002,0.1368469746,true,true
+MH_01_easy,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1829,1818,0.9932083712,0.1606913457,0.1435076313,true,true
+MH_02_easy,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1507,1495,0.9911154992,0.1810042821,0.1618684542,true,true
+MH_02_easy,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1508,1496,0.9917736098,0.1151121291,0.1073714952,true,true
+MH_03_medium,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1319,1308,0.9766580243,0.1325259023,0.1277372304,true,true
+MH_03_medium,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1319,1308,0.9766580243,0.1429917239,0.1284696365,true,true
+MH_04_difficult,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,990,979,0.9734251940,0.3905366256,0.3735152710,true,true
+MH_04_difficult,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,987,975,0.9704724386,0.3580701700,0.3417916019,true,true
+MH_05_difficult,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1088,1077,0.9568661964,0.5747518173,0.5365351667,true,true
+MH_05_difficult,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1089,1077,0.9577464772,0.4950065490,0.4257352820,true,true
+V1_01_easy,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1401,1391,0.9618687739,0.0652912868,0.0638751996,true,true
+V1_01_easy,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1401,1391,0.9618687739,0.0562408258,0.0559521839,true,true
+V1_02_medium,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,807,797,0.9432416600,0.1965620883,0.1956263953,true,true
+V1_02_medium,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,807,797,0.9432416600,0.1950306558,0.1939441663,true,true
+V1_03_difficult,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1003,994,0.9329608955,0.2505984771,0.2498407473,true,true
+V1_03_difficult,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1003,993,0.9329608955,0.2804728290,0.2758933606,true,true
+V2_01_easy,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1082,1075,0.9486616947,0.1135135527,0.1134284941,true,true
+V2_01_easy,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1084,1076,0.9504168509,0.1198626872,0.1198608072,true,true
+V2_02_medium,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1132,1125,0.9637835514,0.1574785707,0.1564939657,true,true
+V2_02_medium,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1136,1129,0.9671921610,0.1466876296,0.1448762107,true,true
+V2_03_difficult,vins_mono_baseline,EuRoC ASL ZIP from Hugging Face mirror,complete,1102,1095,0.9434689476,0.1996532093,0.1831843282,true,true
+V2_03_difficult,clean_room_two_layer_weighting,EuRoC ASL ZIP from Hugging Face mirror,complete,1102,1095,0.9434689476,0.2442174879,0.2266784200,true,true

@@ -1,0 +1,25 @@
+{
+  "status": "clean_room_proxy_repeatability",
+  "run_label": "dual_gray_dce_realtime_20260911",
+  "replay_speed": 1.0,
+  "sequences_compared": 1,
+  "successful_repeats": 1,
+  "max_absolute_ate_difference_m": 0.015407002067105907,
+  "mean_absolute_ate_difference_m": 0.015407002067105907,
+  "max_absolute_ate_difference_percent": 7.794570793730052,
+  "results": [
+    {
+      "sequence": "V1_03_difficult",
+      "canonical_ate_rmse_se3_m": 0.1976632514454714,
+      "repeat_ate_rmse_se3_m": 0.1822562493783655,
+      "absolute_ate_difference_m": -0.015407002067105907,
+      "repeat_vs_canonical_difference_percent": -7.794570793730052,
+      "canonical_matched_poses": 994,
+      "repeat_matched_poses": 987,
+      "canonical_time_coverage": 0.9329608955413858,
+      "repeat_time_coverage": 0.9273743020232265,
+      "repeat_pipeline_success": true
+    }
+  ],
+  "warning": "Repeatability is for the clean-room dual-branch proxy and does not validate the unavailable official IR-VIO implementation."
+}

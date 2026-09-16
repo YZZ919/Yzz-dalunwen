@@ -1,0 +1,13 @@
+{
+  "status": "adaptive_formula_checks_pass",
+  "loose_radius": 1.0,
+  "tight_radius": 0.25,
+  "loose_alpha": 1.0,
+  "tight_alpha": 4.0,
+  "tight_has_larger_alpha": true,
+  "omega_c": 2.449489742783178,
+  "residual_scale": 1.5650845800732873,
+  "objective_scale_after_factor": 2.4494897427831783,
+  "objective_scale_matches_eq9": true,
+  "interpretation": "ProjectionFactor receives sqrt(omega_C), so Ceres' squared residual has coefficient omega_C as in Eq.(1)."
+}

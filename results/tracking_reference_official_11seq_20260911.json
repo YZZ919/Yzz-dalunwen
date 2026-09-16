@@ -1,0 +1,919 @@
+{
+  "status": "tracking_stats_suite_complete",
+  "label": "dual_gray_dce_reference_official_11seq_tracking",
+  "requested_sequences": [
+    "MH_01_easy",
+    "MH_02_easy",
+    "MH_03_medium",
+    "MH_04_difficult",
+    "MH_05_difficult",
+    "V1_01_easy",
+    "V1_02_medium",
+    "V1_03_difficult",
+    "V2_01_easy",
+    "V2_02_medium",
+    "V2_03_difficult"
+  ],
+  "complete_sequences": 11,
+  "missing_sequences": [],
+  "sequence_reports": [
+    {
+      "sequence": "MH_01_easy",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_01_easy/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 3678,
+        "published_rows": 1838,
+        "published_rows_with_enhanced_lk_attempts": 1837,
+        "rows_with_enhanced_lk_attempts": 3675,
+        "timestamp_start": 1403636579.9635556,
+        "timestamp_end": 1403636763.8135555,
+        "raw_flow_attempts": 474426,
+        "raw_flow_success": 469008,
+        "raw_flow_after_f": 454505,
+        "enhanced_flow_attempts": 532772,
+        "enhanced_flow_success": 525596,
+        "enhanced_flow_after_f": 494476,
+        "enhanced_before_bnr": 269587,
+        "enhanced_removed_bnr": 1126,
+        "enhanced_after_bnr": 268461,
+        "published_enhanced_flow_attempts": 264311,
+        "published_enhanced_flow_after_f": 230015,
+        "published_enhanced_after_bnr": 268461,
+        "raw_lk_success_rate_attempt_based": 0.9885798839018097,
+        "raw_post_f_track_rate_attempt_based": 0.9580103114078908,
+        "enhanced_lk_success_rate_attempt_based": 0.9865308236919358,
+        "enhanced_post_f_track_rate_attempt_based": 0.9281193456112559,
+        "enhanced_bnr_survival_rate": 0.9958232407349019,
+        "tsr_proxy_post_f_attempt_based": 0.9281193456112559,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8702437658667251,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 3675,
+            "mean": 0.9875277759332403,
+            "median": 0.9927007299270073,
+            "std": 0.01565872814172836
+          },
+          "raw_post_f_track_rate": {
+            "count": 3675,
+            "mean": 0.9530405569479302,
+            "median": 0.9779411764705882,
+            "std": 0.06313740512452165
+          },
+          "enhanced_lk_success_rate": {
+            "count": 3675,
+            "mean": 0.9861034701956436,
+            "median": 0.9930555555555556,
+            "std": 0.01609707321791588
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 3675,
+            "mean": 0.925005726651776,
+            "median": 0.9726027397260274,
+            "std": 0.10418341481443172
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1838,
+            "mean": 0.9957417774077151,
+            "median": 1.0,
+            "std": 0.018449087689363975
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "MH_02_easy",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_02_easy/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 3036,
+        "published_rows": 1517,
+        "published_rows_with_enhanced_lk_attempts": 1516,
+        "rows_with_enhanced_lk_attempts": 3033,
+        "timestamp_start": 1403636858.8516665,
+        "timestamp_end": 1403637010.6016667,
+        "raw_flow_attempts": 380873,
+        "raw_flow_success": 376099,
+        "raw_flow_after_f": 363747,
+        "enhanced_flow_attempts": 433305,
+        "enhanced_flow_success": 426834,
+        "enhanced_flow_after_f": 400410,
+        "enhanced_before_bnr": 219444,
+        "enhanced_removed_bnr": 963,
+        "enhanced_after_bnr": 218481,
+        "published_enhanced_flow_attempts": 214824,
+        "published_enhanced_flow_after_f": 185436,
+        "published_enhanced_after_bnr": 218481,
+        "raw_lk_success_rate_attempt_based": 0.98746563815235,
+        "raw_post_f_track_rate_attempt_based": 0.955034880393202,
+        "enhanced_lk_success_rate_attempt_based": 0.9850659466195867,
+        "enhanced_post_f_track_rate_attempt_based": 0.9240834977671617,
+        "enhanced_bnr_survival_rate": 0.9956116366817959,
+        "tsr_proxy_post_f_attempt_based": 0.9240834977671617,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8631996424980449,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 3033,
+            "mean": 0.9860394704951153,
+            "median": 0.992,
+            "std": 0.018049301032407476
+          },
+          "raw_post_f_track_rate": {
+            "count": 3033,
+            "mean": 0.9493225740881142,
+            "median": 0.9733333333333334,
+            "std": 0.06674614426481196
+          },
+          "enhanced_lk_success_rate": {
+            "count": 3033,
+            "mean": 0.9842143825211499,
+            "median": 0.9920634920634921,
+            "std": 0.019043690239832156
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 3033,
+            "mean": 0.9197620488908669,
+            "median": 0.9666666666666667,
+            "std": 0.10373608004490847
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1517,
+            "mean": 0.995640217269882,
+            "median": 1.0,
+            "std": 0.018432474932714372
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "MH_03_medium",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_03_medium/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2698,
+        "published_rows": 1348,
+        "published_rows_with_enhanced_lk_attempts": 1347,
+        "rows_with_enhanced_lk_attempts": 2695,
+        "timestamp_start": 1403637130.6383193,
+        "timestamp_end": 1403637265.4883192,
+        "raw_flow_attempts": 297728,
+        "raw_flow_success": 292575,
+        "raw_flow_after_f": 281253,
+        "enhanced_flow_attempts": 360286,
+        "enhanced_flow_success": 353274,
+        "enhanced_flow_after_f": 328587,
+        "enhanced_before_bnr": 182893,
+        "enhanced_removed_bnr": 655,
+        "enhanced_after_bnr": 182238,
+        "published_enhanced_flow_attempts": 178048,
+        "published_enhanced_flow_after_f": 150389,
+        "published_enhanced_after_bnr": 182238,
+        "raw_lk_success_rate_attempt_based": 0.9826922560189166,
+        "raw_post_f_track_rate_attempt_based": 0.9446642573086844,
+        "enhanced_lk_success_rate_attempt_based": 0.9805376839510833,
+        "enhanced_post_f_track_rate_attempt_based": 0.9120171197326569,
+        "enhanced_bnr_survival_rate": 0.9964186710262285,
+        "tsr_proxy_post_f_attempt_based": 0.9120171197326569,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8446542505391804,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2695,
+            "mean": 0.9792223049060225,
+            "median": 0.9871794871794872,
+            "std": 0.02530930783265866
+          },
+          "raw_post_f_track_rate": {
+            "count": 2695,
+            "mean": 0.9352063058774157,
+            "median": 0.9634146341463414,
+            "std": 0.07449452753355455
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2695,
+            "mean": 0.9791792760026661,
+            "median": 0.9862068965517241,
+            "std": 0.022529166631805857
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2695,
+            "mean": 0.9054948444749743,
+            "median": 0.9533333333333334,
+            "std": 0.10759486651473321
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1348,
+            "mean": 0.9964274483390162,
+            "median": 1.0,
+            "std": 0.01185746517616927
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "MH_04_difficult",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_04_difficult/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2030,
+        "published_rows": 1014,
+        "published_rows_with_enhanced_lk_attempts": 1013,
+        "rows_with_enhanced_lk_attempts": 2027,
+        "timestamp_start": 1403638127.3950973,
+        "timestamp_end": 1403638228.845097,
+        "raw_flow_attempts": 198350,
+        "raw_flow_success": 195670,
+        "raw_flow_after_f": 188391,
+        "enhanced_flow_attempts": 269513,
+        "enhanced_flow_success": 264697,
+        "enhanced_flow_after_f": 244817,
+        "enhanced_before_bnr": 137012,
+        "enhanced_removed_bnr": 879,
+        "enhanced_after_bnr": 136133,
+        "published_enhanced_flow_attempts": 133380,
+        "published_enhanced_flow_after_f": 111287,
+        "published_enhanced_after_bnr": 136133,
+        "raw_lk_success_rate_attempt_based": 0.9864885303755987,
+        "raw_post_f_track_rate_attempt_based": 0.9497907738845475,
+        "enhanced_lk_success_rate_attempt_based": 0.9821307320982662,
+        "enhanced_post_f_track_rate_attempt_based": 0.9083680564573879,
+        "enhanced_bnr_survival_rate": 0.9935845035471346,
+        "tsr_proxy_post_f_attempt_based": 0.9083680564573879,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.834360473834158,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2027,
+            "mean": 0.9849749503760818,
+            "median": 0.9911504424778761,
+            "std": 0.020519931202691938
+          },
+          "raw_post_f_track_rate": {
+            "count": 2027,
+            "mean": 0.9431493548169323,
+            "median": 0.9733333333333334,
+            "std": 0.07612615986496225
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2027,
+            "mean": 0.981221659492717,
+            "median": 0.9862068965517241,
+            "std": 0.020138332970203017
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2027,
+            "mean": 0.9027805818642676,
+            "median": 0.9611650485436893,
+            "std": 0.1138315824432855
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1014,
+            "mean": 0.9934005214204489,
+            "median": 1.0,
+            "std": 0.01636100436711181
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "MH_05_difficult",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_05_difficult/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2269,
+        "published_rows": 1134,
+        "published_rows_with_enhanced_lk_attempts": 1133,
+        "rows_with_enhanced_lk_attempts": 2266,
+        "timestamp_start": 1403638518.2778294,
+        "timestamp_end": 1403638631.6778295,
+        "raw_flow_attempts": 225375,
+        "raw_flow_success": 222475,
+        "raw_flow_after_f": 214561,
+        "enhanced_flow_attempts": 305852,
+        "enhanced_flow_success": 301014,
+        "enhanced_flow_after_f": 278996,
+        "enhanced_before_bnr": 155367,
+        "enhanced_removed_bnr": 1022,
+        "enhanced_after_bnr": 154345,
+        "published_enhanced_flow_attempts": 151630,
+        "published_enhanced_flow_after_f": 127366,
+        "published_enhanced_after_bnr": 154345,
+        "raw_lk_success_rate_attempt_based": 0.9871325568496949,
+        "raw_post_f_track_rate_attempt_based": 0.9520177481974487,
+        "enhanced_lk_success_rate_attempt_based": 0.9841818918954266,
+        "enhanced_post_f_track_rate_attempt_based": 0.9121928252880478,
+        "enhanced_bnr_survival_rate": 0.9934220265564759,
+        "tsr_proxy_post_f_attempt_based": 0.9121928252880478,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8399788959968344,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2266,
+            "mean": 0.9859758878113697,
+            "median": 0.9925649530127142,
+            "std": 0.02203888397311626
+          },
+          "raw_post_f_track_rate": {
+            "count": 2266,
+            "mean": 0.9474451186892503,
+            "median": 0.972972972972973,
+            "std": 0.06926117249321162
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2266,
+            "mean": 0.9834579205808446,
+            "median": 0.9866666666666667,
+            "std": 0.01848538408547364
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2266,
+            "mean": 0.9084303411697934,
+            "median": 0.9611396355582402,
+            "std": 0.10550975836236726
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1134,
+            "mean": 0.9933139313554976,
+            "median": 1.0,
+            "std": 0.01760238136332396
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "V1_01_easy",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V1_01_easy/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2909,
+        "published_rows": 1454,
+        "published_rows_with_enhanced_lk_attempts": 1453,
+        "rows_with_enhanced_lk_attempts": 2906,
+        "timestamp_start": 1403715273.4121432,
+        "timestamp_end": 1403715418.812143,
+        "raw_flow_attempts": 272361,
+        "raw_flow_success": 267427,
+        "raw_flow_after_f": 258762,
+        "enhanced_flow_attempts": 287247,
+        "enhanced_flow_success": 282241,
+        "enhanced_flow_after_f": 269003,
+        "enhanced_before_bnr": 145327,
+        "enhanced_removed_bnr": 136,
+        "enhanced_after_bnr": 145191,
+        "published_enhanced_flow_attempts": 142206,
+        "published_enhanced_flow_after_f": 126797,
+        "published_enhanced_after_bnr": 145191,
+        "raw_lk_success_rate_attempt_based": 0.9818843373317031,
+        "raw_post_f_track_rate_attempt_based": 0.9500699439347043,
+        "enhanced_lk_success_rate_attempt_based": 0.9825724898780492,
+        "enhanced_post_f_track_rate_attempt_based": 0.936486717006618,
+        "enhanced_bnr_survival_rate": 0.9990641794023134,
+        "tsr_proxy_post_f_attempt_based": 0.936486717006618,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8916431092921536,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2906,
+            "mean": 0.9798573023099669,
+            "median": 0.9863479638430714,
+            "std": 0.0278679411371268
+          },
+          "raw_post_f_track_rate": {
+            "count": 2906,
+            "mean": 0.9434430597698724,
+            "median": 0.9649122807017544,
+            "std": 0.06945665594666323
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2906,
+            "mean": 0.981027780951185,
+            "median": 0.9864864864864865,
+            "std": 0.021718414963273862
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2906,
+            "mean": 0.9299621769645475,
+            "median": 0.9565217391304348,
+            "std": 0.07218668910295349
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1454,
+            "mean": 0.998880913159829,
+            "median": 1.0,
+            "std": 0.006106413253394183
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "V1_02_medium",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V1_02_medium/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 1707,
+        "published_rows": 853,
+        "published_rows_with_enhanced_lk_attempts": 852,
+        "rows_with_enhanced_lk_attempts": 1704,
+        "timestamp_start": 1403715524.062143,
+        "timestamp_end": 1403715609.362143,
+        "raw_flow_attempts": 118247,
+        "raw_flow_success": 113989,
+        "raw_flow_after_f": 106772,
+        "enhanced_flow_attempts": 130654,
+        "enhanced_flow_success": 126410,
+        "enhanced_flow_after_f": 116252,
+        "enhanced_before_bnr": 66770,
+        "enhanced_removed_bnr": 102,
+        "enhanced_after_bnr": 66668,
+        "published_enhanced_flow_attempts": 64136,
+        "published_enhanced_flow_after_f": 52116,
+        "published_enhanced_after_bnr": 66668,
+        "raw_lk_success_rate_attempt_based": 0.9639906297834194,
+        "raw_post_f_track_rate_attempt_based": 0.9029573688973082,
+        "enhanced_lk_success_rate_attempt_based": 0.9675172593261592,
+        "enhanced_post_f_track_rate_attempt_based": 0.8897699266765656,
+        "enhanced_bnr_survival_rate": 0.9984723678298637,
+        "tsr_proxy_post_f_attempt_based": 0.8897699266765656,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8125857552700512,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 1704,
+            "mean": 0.9594878444644248,
+            "median": 0.9716297786720323,
+            "std": 0.04452470428547383
+          },
+          "raw_post_f_track_rate": {
+            "count": 1704,
+            "mean": 0.8898093823993845,
+            "median": 0.9230769230769231,
+            "std": 0.11675702134627342
+          },
+          "enhanced_lk_success_rate": {
+            "count": 1704,
+            "mean": 0.9629909441617946,
+            "median": 0.9715633423180593,
+            "std": 0.039212273396744
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 1704,
+            "mean": 0.8734588746495223,
+            "median": 0.9145896656534954,
+            "std": 0.12172131332723142
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 853,
+            "mean": 0.998310291699656,
+            "median": 1.0,
+            "std": 0.006710430728916834
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "V1_03_difficult",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V1_03_difficult/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2146,
+        "published_rows": 1072,
+        "published_rows_with_enhanced_lk_attempts": 1071,
+        "rows_with_enhanced_lk_attempts": 2143,
+        "timestamp_start": 1403715886.7340581,
+        "timestamp_end": 1403715993.9840581,
+        "raw_flow_attempts": 103072,
+        "raw_flow_success": 98332,
+        "raw_flow_after_f": 90709,
+        "enhanced_flow_attempts": 144185,
+        "enhanced_flow_success": 138606,
+        "enhanced_flow_after_f": 125513,
+        "enhanced_before_bnr": 74046,
+        "enhanced_removed_bnr": 256,
+        "enhanced_after_bnr": 73790,
+        "published_enhanced_flow_attempts": 70395,
+        "published_enhanced_flow_after_f": 54970,
+        "published_enhanced_after_bnr": 73790,
+        "raw_lk_success_rate_attempt_based": 0.9540127289661596,
+        "raw_post_f_track_rate_attempt_based": 0.8800547190313567,
+        "enhanced_lk_success_rate_attempt_based": 0.961306654645074,
+        "enhanced_post_f_track_rate_attempt_based": 0.8704997052397961,
+        "enhanced_bnr_survival_rate": 0.9965426896793885,
+        "tsr_proxy_post_f_attempt_based": 0.8704997052397961,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.7808793238156119,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2143,
+            "mean": 0.9483005860077084,
+            "median": 0.9705882352941176,
+            "std": 0.07167916109817375
+          },
+          "raw_post_f_track_rate": {
+            "count": 2143,
+            "mean": 0.8567853755844308,
+            "median": 0.9135802469135802,
+            "std": 0.16004340355820718
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2143,
+            "mean": 0.9538906346333497,
+            "median": 0.96875,
+            "std": 0.0508798198057375
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2143,
+            "mean": 0.844324291710588,
+            "median": 0.9,
+            "std": 0.15313863926838633
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1072,
+            "mean": 0.9961357632888413,
+            "median": 1.0,
+            "std": 0.01578785243181087
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "V2_01_easy",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V2_01_easy/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2277,
+        "published_rows": 1138,
+        "published_rows_with_enhanced_lk_attempts": 1137,
+        "rows_with_enhanced_lk_attempts": 2274,
+        "timestamp_start": 1413393212.4057605,
+        "timestamp_end": 1413393326.2057607,
+        "raw_flow_attempts": 210223,
+        "raw_flow_success": 206944,
+        "raw_flow_after_f": 199702,
+        "enhanced_flow_attempts": 224314,
+        "enhanced_flow_success": 220565,
+        "enhanced_flow_after_f": 209068,
+        "enhanced_before_bnr": 113572,
+        "enhanced_removed_bnr": 213,
+        "enhanced_after_bnr": 113359,
+        "published_enhanced_flow_attempts": 111105,
+        "published_enhanced_flow_after_f": 97963,
+        "published_enhanced_after_bnr": 113359,
+        "raw_lk_success_rate_attempt_based": 0.9844022775814254,
+        "raw_post_f_track_rate_attempt_based": 0.9499531449936496,
+        "enhanced_lk_success_rate_attempt_based": 0.9832868211524916,
+        "enhanced_post_f_track_rate_attempt_based": 0.9320327754843657,
+        "enhanced_bnr_survival_rate": 0.9981245377381749,
+        "tsr_proxy_post_f_attempt_based": 0.9320327754843657,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.8817154943521893,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2274,
+            "mean": 0.9840109383515258,
+            "median": 0.989010989010989,
+            "std": 0.019434123623731377
+          },
+          "raw_post_f_track_rate": {
+            "count": 2274,
+            "mean": 0.9466643105932362,
+            "median": 0.9679135209334249,
+            "std": 0.06349231991498575
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2274,
+            "mean": 0.9822515469750078,
+            "median": 0.9866666666666667,
+            "std": 0.020346393884728625
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2274,
+            "mean": 0.9255863533355386,
+            "median": 0.9560921534605745,
+            "std": 0.08010694901910748
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1138,
+            "mean": 0.9977758396411435,
+            "median": 1.0,
+            "std": 0.00735078485573815
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "V2_02_medium",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V2_02_medium/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 2344,
+        "published_rows": 1171,
+        "published_rows_with_enhanced_lk_attempts": 1170,
+        "rows_with_enhanced_lk_attempts": 2341,
+        "timestamp_start": 1413393886.2057607,
+        "timestamp_end": 1413394003.3557606,
+        "raw_flow_attempts": 170307,
+        "raw_flow_success": 165220,
+        "raw_flow_after_f": 152294,
+        "enhanced_flow_attempts": 182808,
+        "enhanced_flow_success": 177522,
+        "enhanced_flow_after_f": 160965,
+        "enhanced_before_bnr": 93164,
+        "enhanced_removed_bnr": 166,
+        "enhanced_after_bnr": 92998,
+        "published_enhanced_flow_attempts": 89810,
+        "published_enhanced_flow_after_f": 71005,
+        "published_enhanced_after_bnr": 92998,
+        "raw_lk_success_rate_attempt_based": 0.9701304115509052,
+        "raw_post_f_track_rate_attempt_based": 0.894232180708955,
+        "enhanced_lk_success_rate_attempt_based": 0.9710844164369175,
+        "enhanced_post_f_track_rate_attempt_based": 0.880513981882631,
+        "enhanced_bnr_survival_rate": 0.9982181958696492,
+        "tsr_proxy_post_f_attempt_based": 0.880513981882631,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.7906135174256764,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 2341,
+            "mean": 0.9666615373535171,
+            "median": 0.9777777777777777,
+            "std": 0.0373989885173611
+          },
+          "raw_post_f_track_rate": {
+            "count": 2341,
+            "mean": 0.8851879981111381,
+            "median": 0.9239130434782609,
+            "std": 0.1181738698032606
+          },
+          "enhanced_lk_success_rate": {
+            "count": 2341,
+            "mean": 0.967936069111827,
+            "median": 0.9761904761904762,
+            "std": 0.03402279544433334
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 2341,
+            "mean": 0.8691850916999714,
+            "median": 0.9142857142857143,
+            "std": 0.12699790097030042
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1171,
+            "mean": 0.9981824828442784,
+            "median": 1.0,
+            "std": 0.007612062311600707
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    },
+    {
+      "sequence": "V2_03_difficult",
+      "report": {
+        "status": "tracking_stats_complete",
+        "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V2_03_difficult/dual_gray_dce_reference_official_11seq_tracking_tracking_stats.csv",
+        "rows": 1919,
+        "published_rows": 1165,
+        "published_rows_with_enhanced_lk_attempts": 1164,
+        "rows_with_enhanced_lk_attempts": 1916,
+        "timestamp_start": 1413394881.7057607,
+        "timestamp_end": 1413394998.3057606,
+        "raw_flow_attempts": 94505,
+        "raw_flow_success": 90412,
+        "raw_flow_after_f": 81652,
+        "enhanced_flow_attempts": 125740,
+        "enhanced_flow_success": 118708,
+        "enhanced_flow_after_f": 99483,
+        "enhanced_before_bnr": 78556,
+        "enhanced_removed_bnr": 331,
+        "enhanced_after_bnr": 78225,
+        "published_enhanced_flow_attempts": 75553,
+        "published_enhanced_flow_after_f": 51818,
+        "published_enhanced_after_bnr": 78225,
+        "raw_lk_success_rate_attempt_based": 0.9566901222157558,
+        "raw_post_f_track_rate_attempt_based": 0.8639966139357705,
+        "enhanced_lk_success_rate_attempt_based": 0.9440750755527278,
+        "enhanced_post_f_track_rate_attempt_based": 0.7911802131382217,
+        "enhanced_bnr_survival_rate": 0.9957864453383574,
+        "tsr_proxy_post_f_attempt_based": 0.7911802131382217,
+        "tsr_proxy_post_f_then_bnr_attempt_based": null,
+        "tsr_proxy_post_f_published_attempt_based": 0.685849668444668,
+        "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+        "frame_level": {
+          "raw_lk_success_rate": {
+            "count": 1916,
+            "mean": 0.9458124207059697,
+            "median": 0.967741935483871,
+            "std": 0.07166951563654882
+          },
+          "raw_post_f_track_rate": {
+            "count": 1916,
+            "mean": 0.839825550675977,
+            "median": 0.8888888888888888,
+            "std": 0.16374975369170922
+          },
+          "enhanced_lk_success_rate": {
+            "count": 1916,
+            "mean": 0.9341489834879602,
+            "median": 0.9555555555555556,
+            "std": 0.07447824956102593
+          },
+          "enhanced_post_f_track_rate": {
+            "count": 1916,
+            "mean": 0.7713699136493317,
+            "median": 0.8137564052029957,
+            "std": 0.19959595608385303
+          },
+          "enhanced_bnr_survival_rate": {
+            "count": 1165,
+            "mean": 0.9956325619548279,
+            "median": 1.0,
+            "std": 0.01858674569587196
+          }
+        },
+        "definition": {
+          "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+          "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+          "bnr_numerator": "post-flow enhanced points remaining after BNR",
+          "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+          "paper_equivalence": false,
+          "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+          "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+        }
+      }
+    }
+  ],
+  "micro_aggregate": {
+    "status": "tracking_stats_complete",
+    "source": "/mnt/d/大论文实验/IR-VIO的复现/<multiple sequence tracker CSVs>",
+    "rows": 27013,
+    "published_rows": 13704,
+    "published_rows_with_enhanced_lk_attempts": 13693,
+    "rows_with_enhanced_lk_attempts": 26980,
+    "timestamp_start": 1403636579.9635556,
+    "timestamp_end": 1413394998.3057606,
+    "raw_flow_attempts": 2545467,
+    "raw_flow_success": 2498151,
+    "raw_flow_after_f": 2392348,
+    "enhanced_flow_attempts": 2996676,
+    "enhanced_flow_success": 2935467,
+    "enhanced_flow_after_f": 2727570,
+    "enhanced_before_bnr": 1535738,
+    "enhanced_removed_bnr": 5849,
+    "enhanced_after_bnr": 1529889,
+    "published_enhanced_flow_attempts": 1495398,
+    "published_enhanced_flow_after_f": 1259162,
+    "published_enhanced_after_bnr": 1529889,
+    "raw_lk_success_rate_attempt_based": 0.981411662378652,
+    "raw_post_f_track_rate_attempt_based": 0.9398464014658214,
+    "enhanced_lk_success_rate_attempt_based": 0.9795743684001874,
+    "enhanced_post_f_track_rate_attempt_based": 0.9101984999379312,
+    "enhanced_bnr_survival_rate": 0.996191407648961,
+    "tsr_proxy_post_f_attempt_based": 0.9101984999379312,
+    "tsr_proxy_post_f_then_bnr_attempt_based": null,
+    "tsr_proxy_post_f_published_attempt_based": 0.8420246650055704,
+    "tsr_proxy_post_f_then_bnr_published_attempt_based": null,
+    "frame_level": {
+      "raw_lk_success_rate": {
+        "count": 26980,
+        "mean": 0.975426422631735,
+        "median": 0.9866666666666667,
+        "std": 0.03928568545084839
+      },
+      "raw_post_f_track_rate": {
+        "count": 26980,
+        "mean": 0.9224904399420272,
+        "median": 0.9605263157894737,
+        "std": 0.10357954694152303
+      },
+      "enhanced_lk_success_rate": {
+        "count": 26980,
+        "mean": 0.974454830025973,
+        "median": 0.9848484848484849,
+        "std": 0.035792699315864256
+      },
+      "enhanced_post_f_track_rate": {
+        "count": 26980,
+        "mean": 0.894570189978698,
+        "median": 0.9475648075412411,
+        "std": 0.12526531192750467
+      },
+      "enhanced_bnr_survival_rate": {
+        "count": 13704,
+        "mean": 0.9963157848884805,
+        "median": 1.0,
+        "std": 0.014509814089460631
+      }
+    },
+    "definition": {
+      "denominator": "LK optical-flow attempts on the previous frame's tracked points",
+      "post_f_numerator": "points surviving LK and the configured fundamental-matrix rejection",
+      "bnr_numerator": "post-flow enhanced points remaining after BNR",
+      "aggregation": "micro aggregate over synchronized CSV rows; published-frame variants use only rows actually sent to VIO; frame-level mean/median/std also reported",
+      "paper_equivalence": false,
+      "new_detection_caveat": "The tracker may add new points after LK, so BNR-after counts are not used as a TSR numerator.",
+      "warning": "The available IR-VIO paper text reports a TSR improvement but does not define TSR mathematically. Do not call these values the paper TSR."
+    }
+  },
+  "warning": "The paper's TSR formula is not defined in the available text. post-F attempt-based rates and BNR survival are explicitly named engineering proxies, not paper TSR."
+}

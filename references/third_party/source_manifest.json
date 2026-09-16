@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-09",
+  "sources": [
+    {
+      "name": "Zero-DCE",
+      "repository": "https://github.com/Li-Chongyi/Zero-DCE",
+      "commit": "e0f4adc54d0f23348c4a9b84acc08fe8778d5bfd",
+      "files": [
+        "Zero-DCE/model.py",
+        "Zero-DCE/lowlight_test.py",
+        "Zero-DCE/Epoch99.pth",
+        "Zero-DCE/README.md"
+      ],
+      "checkpoint_sha256": "a4395acb874f320375d9704997cef874eaaaaa26a1777ceb29a92b70f74c3612",
+      "usage": "RGB proxy only; not the unpublished IR-VIO grayscale checkpoint",
+      "license_note": "Official README limits the implementation to non-commercial academic research."
+    },
+    {
+      "name": "Noise-AwareCameraExposureControl",
+      "repository": "https://github.com/UkcheolShin/Noise-AwareCameraExposureControl",
+      "commit": "1e2fb2b3193d3c8f3981b6d5ea841bfd50113bab",
+      "files": [
+        "Noise-AwareCameraExposureControl/Metric_Our.m",
+        "Noise-AwareCameraExposureControl/README.md"
+      ],
+      "usage": "Reference implementation for the noise estimator cited by IR-VIO"
+    }
+  ]
+}

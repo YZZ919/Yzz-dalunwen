@@ -1,0 +1,157 @@
+{
+  "status": "cleanroom_gray_dce_vs_published_irvio_table1",
+  "paper_table": "IR-VIO Table I, rounded values transcribed in references/paper_protocol.md",
+  "paper_mean_reported_m": 0.12,
+  "paper_mean_from_rounded_rows_m": 0.12636363636363637,
+  "cleanroom_means_m": {
+    "official": 0.18977987034808774,
+    "paper": 0.20098064485835862
+  },
+  "cleanroom_gap_vs_reported_mean_m": {
+    "official": 0.06977987034808775,
+    "paper": 0.08098064485835862
+  },
+  "cleanroom_gap_vs_reported_mean_pct": {
+    "official": 58.14989195673979,
+    "paper": 67.48387071529886
+  },
+  "cleanroom_ratio_vs_reported_mean": {
+    "official": 1.5814989195673979,
+    "paper": 1.6748387071529887
+  },
+  "rows": [
+    {
+      "sequence": "MH_01_easy",
+      "paper_irvio_ate_rmse_se3_m": 0.16,
+      "official_ate_rmse_se3_m": 0.19539369122523279,
+      "official_gap_m": 0.03539369122523278,
+      "official_gap_pct": 22.12105701577049,
+      "official_ratio": 1.221210570157705,
+      "paper_ate_rmse_se3_m": 0.23576364864286695,
+      "paper_gap_m": 0.07576364864286694,
+      "paper_gap_pct": 47.35228040179184,
+      "paper_ratio": 1.4735228040179185
+    },
+    {
+      "sequence": "MH_02_easy",
+      "paper_irvio_ate_rmse_se3_m": 0.12,
+      "official_ate_rmse_se3_m": 0.11442756364710428,
+      "official_gap_m": -0.005572436352895713,
+      "official_gap_pct": -4.643696960746428,
+      "official_ratio": 0.9535630303925358,
+      "paper_ate_rmse_se3_m": 0.1462237015188973,
+      "paper_gap_m": 0.026223701518897302,
+      "paper_gap_pct": 21.853084599081086,
+      "paper_ratio": 1.2185308459908109
+    },
+    {
+      "sequence": "MH_03_medium",
+      "paper_irvio_ate_rmse_se3_m": 0.11,
+      "official_ate_rmse_se3_m": 0.15285171337521858,
+      "official_gap_m": 0.04285171337521858,
+      "official_gap_pct": 38.95610306838052,
+      "official_ratio": 1.3895610306838053,
+      "paper_ate_rmse_se3_m": 0.17047148137748447,
+      "paper_gap_m": 0.06047148137748447,
+      "paper_gap_pct": 54.97407397953133,
+      "paper_ratio": 1.5497407397953133
+    },
+    {
+      "sequence": "MH_04_difficult",
+      "paper_irvio_ate_rmse_se3_m": 0.2,
+      "official_ate_rmse_se3_m": 0.33182974315127245,
+      "official_gap_m": 0.13182974315127244,
+      "official_gap_pct": 65.91487157563621,
+      "official_ratio": 1.6591487157563622,
+      "paper_ate_rmse_se3_m": 0.3101857477777244,
+      "paper_gap_m": 0.11018574777772439,
+      "paper_gap_pct": 55.092873888862194,
+      "paper_ratio": 1.550928738888622
+    },
+    {
+      "sequence": "MH_05_difficult",
+      "paper_irvio_ate_rmse_se3_m": 0.21,
+      "official_ate_rmse_se3_m": 0.46171355695896904,
+      "official_gap_m": 0.251713556958969,
+      "official_gap_pct": 119.86359855189002,
+      "official_ratio": 2.1986359855189,
+      "paper_ate_rmse_se3_m": 0.44700490730481685,
+      "paper_gap_m": 0.23700490730481685,
+      "paper_gap_pct": 112.85947966896042,
+      "paper_ratio": 2.128594796689604
+    },
+    {
+      "sequence": "V1_01_easy",
+      "paper_irvio_ate_rmse_se3_m": 0.08,
+      "official_ate_rmse_se3_m": 0.0574701547568828,
+      "official_gap_m": -0.0225298452431172,
+      "official_gap_pct": -28.1623065538965,
+      "official_ratio": 0.718376934461035,
+      "paper_ate_rmse_se3_m": 0.05970589532831976,
+      "paper_gap_m": -0.02029410467168024,
+      "paper_gap_pct": -25.367630839600295,
+      "paper_ratio": 0.746323691603997
+    },
+    {
+      "sequence": "V1_02_medium",
+      "paper_irvio_ate_rmse_se3_m": 0.08,
+      "official_ate_rmse_se3_m": 0.18241854855198983,
+      "official_gap_m": 0.10241854855198983,
+      "official_gap_pct": 128.02318568998726,
+      "official_ratio": 2.280231856899873,
+      "paper_ate_rmse_se3_m": 0.15860984695618935,
+      "paper_gap_m": 0.07860984695618935,
+      "paper_gap_pct": 98.26230869523668,
+      "paper_ratio": 1.9826230869523669
+    },
+    {
+      "sequence": "V1_03_difficult",
+      "paper_irvio_ate_rmse_se3_m": 0.1,
+      "official_ate_rmse_se3_m": 0.13810860279861367,
+      "official_gap_m": 0.03810860279861367,
+      "official_gap_pct": 38.10860279861367,
+      "official_ratio": 1.3810860279861366,
+      "paper_ate_rmse_se3_m": 0.20381198874221176,
+      "paper_gap_m": 0.10381198874221176,
+      "paper_gap_pct": 103.81198874221177,
+      "paper_ratio": 2.0381198874221176
+    },
+    {
+      "sequence": "V2_01_easy",
+      "paper_irvio_ate_rmse_se3_m": 0.06,
+      "official_ate_rmse_se3_m": 0.11821229894089906,
+      "official_gap_m": 0.05821229894089906,
+      "official_gap_pct": 97.02049823483176,
+      "official_ratio": 1.9702049823483176,
+      "paper_ate_rmse_se3_m": 0.1267196734957815,
+      "paper_gap_m": 0.0667196734957815,
+      "paper_gap_pct": 111.19945582630251,
+      "paper_ratio": 2.1119945582630253
+    },
+    {
+      "sequence": "V2_02_medium",
+      "paper_irvio_ate_rmse_se3_m": 0.1,
+      "official_ate_rmse_se3_m": 0.13518160959325934,
+      "official_gap_m": 0.03518160959325933,
+      "official_gap_pct": 35.18160959325933,
+      "official_ratio": 1.3518160959325933,
+      "paper_ate_rmse_se3_m": 0.12492602926483892,
+      "paper_gap_m": 0.024926029264838917,
+      "paper_gap_pct": 24.926029264838913,
+      "paper_ratio": 1.2492602926483891
+    },
+    {
+      "sequence": "V2_03_difficult",
+      "paper_irvio_ate_rmse_se3_m": 0.17,
+      "official_ate_rmse_se3_m": 0.19997109082952325,
+      "official_gap_m": 0.029971090829523234,
+      "official_gap_pct": 17.630053429131312,
+      "official_ratio": 1.176300534291313,
+      "paper_ate_rmse_se3_m": 0.22736417303281364,
+      "paper_gap_m": 0.05736417303281363,
+      "paper_gap_pct": 33.74363119577272,
+      "paper_ratio": 1.3374363119577273
+    }
+  ],
+  "warning": "Published IR-VIO values are rounded Table I results; clean-room trajectories were not produced by the unpublished author code or checkpoint."
+}

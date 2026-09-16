@@ -1,0 +1,49 @@
+{
+  "status": "clean_room_proxy_repeatability",
+  "run_label": "dual_gray_dce_repeat_20260911",
+  "replay_speed": 3.0,
+  "sequences_compared": 3,
+  "successful_repeats": 3,
+  "max_absolute_ate_difference_m": 0.016509534896500644,
+  "mean_absolute_ate_difference_m": 0.005504845838608705,
+  "max_absolute_ate_difference_percent": 8.35235420634324,
+  "results": [
+    {
+      "sequence": "V1_01_easy",
+      "canonical_ate_rmse_se3_m": 0.053298746046639374,
+      "repeat_ate_rmse_se3_m": 0.05330055349458903,
+      "absolute_ate_difference_m": 1.807447949656038e-06,
+      "repeat_vs_canonical_difference_percent": 0.0033911641149576397,
+      "canonical_matched_poses": 1391,
+      "repeat_matched_poses": 1391,
+      "canonical_time_coverage": 0.961868773932432,
+      "repeat_time_coverage": 0.961868773932432,
+      "repeat_pipeline_success": true
+    },
+    {
+      "sequence": "V1_03_difficult",
+      "canonical_ate_rmse_se3_m": 0.1976632514454714,
+      "repeat_ate_rmse_se3_m": 0.18115371654897075,
+      "absolute_ate_difference_m": -0.016509534896500644,
+      "repeat_vs_canonical_difference_percent": -8.35235420634324,
+      "canonical_matched_poses": 994,
+      "repeat_matched_poses": 993,
+      "canonical_time_coverage": 0.9329608955413858,
+      "repeat_time_coverage": 0.9329608955413858,
+      "repeat_pipeline_success": true
+    },
+    {
+      "sequence": "V2_03_difficult",
+      "canonical_ate_rmse_se3_m": 0.22472647947318083,
+      "repeat_ate_rmse_se3_m": 0.22472328430180502,
+      "absolute_ate_difference_m": -3.195171375813821e-06,
+      "repeat_vs_canonical_difference_percent": -0.0014218045791951888,
+      "canonical_matched_poses": 1088,
+      "repeat_matched_poses": 1088,
+      "canonical_time_coverage": 0.9374732298565662,
+      "repeat_time_coverage": 0.9374732298565662,
+      "repeat_pipeline_success": true
+    }
+  ],
+  "warning": "Repeatability is for the clean-room dual-branch proxy and does not validate the unavailable official IR-VIO implementation."
+}

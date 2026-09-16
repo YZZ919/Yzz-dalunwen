@@ -1,0 +1,2 @@
+sequence,canonical_ate_rmse_se3_m,repeat_ate_rmse_se3_m,absolute_ate_difference_m,repeat_vs_canonical_difference_percent,canonical_matched_poses,repeat_matched_poses,canonical_time_coverage,repeat_time_coverage,repeat_pipeline_success
+V1_03_difficult,0.1976632514454714,0.1822562493783655,-0.015407002067105907,-7.794570793730052,994,987,0.9329608955413858,0.9273743020232265,True

@@ -1,0 +1,107 @@
+{
+  "status": "temporal_brightness_aggregate_partial",
+  "label": "dual_gray_dce_reference_official_11seq_tracking",
+  "requested_sequences": [
+    "MH_01_easy",
+    "MH_02_easy",
+    "MH_03_medium",
+    "MH_04_difficult",
+    "MH_05_difficult",
+    "V1_01_easy",
+    "V1_02_medium",
+    "V1_03_difficult",
+    "V2_01_easy",
+    "V2_02_medium",
+    "V2_03_difficult"
+  ],
+  "complete_sequences": 6,
+  "missing_sequences": [
+    "V1_02_medium",
+    "V1_03_difficult",
+    "V2_01_easy",
+    "V2_02_medium",
+    "V2_03_difficult"
+  ],
+  "mean_raw_intensity": 90.41146938140051,
+  "mean_enhanced_intensity": 150.3700487846884,
+  "mean_raw_adjacent_delta_abs": 0.969375588834672,
+  "mean_enhanced_adjacent_delta_abs": 0.8212235089920854,
+  "mean_raw_adjacent_delta_abs_p95": 3.8750161606087437,
+  "mean_enhanced_adjacent_delta_abs_p95": 2.3600268496971037,
+  "mean_enhanced_over_raw_delta_mean_ratio": 0.8792533126617144,
+  "rows": [
+    {
+      "sequence": "MH_01_easy",
+      "frames_compared": 3682,
+      "raw_mean_intensity": 86.5540851598646,
+      "enhanced_mean_intensity": 146.8816802117824,
+      "raw_adjacent_delta_abs_mean": 0.7015959855188904,
+      "enhanced_adjacent_delta_abs_mean": 0.7905087339312862,
+      "raw_adjacent_delta_abs_p95": 2.871016179078012,
+      "enhanced_adjacent_delta_abs_p95": 2.2818013076241073,
+      "enhanced_over_raw_delta_mean_ratio": 1.126729271899464,
+      "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_01_easy/dual_gray_dce_reference_official_11seq_tracking_brightness.json"
+    },
+    {
+      "sequence": "MH_02_easy",
+      "frames_compared": 3040,
+      "raw_mean_intensity": 86.27138309810535,
+      "enhanced_mean_intensity": 147.67842655240267,
+      "raw_adjacent_delta_abs_mean": 0.7772448500827891,
+      "enhanced_adjacent_delta_abs_mean": 0.8070597934957257,
+      "raw_adjacent_delta_abs_p95": 3.2957075576241146,
+      "enhanced_adjacent_delta_abs_p95": 2.3381150265957387,
+      "enhanced_over_raw_delta_mean_ratio": 1.0383597825186759,
+      "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_02_easy/dual_gray_dce_reference_official_11seq_tracking_brightness.json"
+    },
+    {
+      "sequence": "MH_03_medium",
+      "frames_compared": 2700,
+      "raw_mean_intensity": 87.77363908486834,
+      "enhanced_mean_intensity": 149.4081624269438,
+      "raw_adjacent_delta_abs_mean": 1.1538372838130881,
+      "enhanced_adjacent_delta_abs_mean": 0.9694407057693418,
+      "raw_adjacent_delta_abs_p95": 4.655546320921973,
+      "enhanced_adjacent_delta_abs_p95": 2.7107535460992946,
+      "enhanced_over_raw_delta_mean_ratio": 0.8401884038324965,
+      "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_03_medium/dual_gray_dce_reference_official_11seq_tracking_brightness.json"
+    },
+    {
+      "sequence": "MH_04_difficult",
+      "frames_compared": 2033,
+      "raw_mean_intensity": 74.68133947828473,
+      "enhanced_mean_intensity": 148.67915536707272,
+      "raw_adjacent_delta_abs_mean": 1.106926962265106,
+      "enhanced_adjacent_delta_abs_mean": 0.9292602995795106,
+      "raw_adjacent_delta_abs_p95": 4.522795323581553,
+      "enhanced_adjacent_delta_abs_p95": 2.7421120068705838,
+      "enhanced_over_raw_delta_mean_ratio": 0.8394955866627046,
+      "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_04_difficult/dual_gray_dce_reference_official_11seq_tracking_brightness.json"
+    },
+    {
+      "sequence": "MH_05_difficult",
+      "frames_compared": 2273,
+      "raw_mean_intensity": 73.02883001247297,
+      "enhanced_mean_intensity": 147.63885111058391,
+      "raw_adjacent_delta_abs_mean": 0.9201004188361556,
+      "enhanced_adjacent_delta_abs_mean": 0.8703234279206936,
+      "raw_adjacent_delta_abs_p95": 3.713306737588645,
+      "enhanced_adjacent_delta_abs_p95": 2.482388353280135,
+      "enhanced_over_raw_delta_mean_ratio": 0.945900480103655,
+      "source": "/mnt/d/大论文实验/IR-VIO的复现/results/MH_05_difficult/dual_gray_dce_reference_official_11seq_tracking_brightness.json"
+    },
+    {
+      "sequence": "V1_01_easy",
+      "frames_compared": 2912,
+      "raw_mean_intensity": 134.15953945480703,
+      "enhanced_mean_intensity": 161.934017039345,
+      "raw_adjacent_delta_abs_mean": 1.1565480324920028,
+      "enhanced_adjacent_delta_abs_mean": 0.5607480932559548,
+      "raw_adjacent_delta_abs_p95": 4.1917248448581645,
+      "enhanced_adjacent_delta_abs_p95": 1.6049908577127638,
+      "enhanced_over_raw_delta_mean_ratio": 0.4848463509532901,
+      "source": "/mnt/d/大论文实验/IR-VIO的复现/results/V1_01_easy/dual_gray_dce_reference_official_11seq_tracking_brightness.json"
+    }
+  ],
+  "warning": "Global frame-mean brightness continuity is not the paper's TSR definition."
+}

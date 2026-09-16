@@ -1,0 +1,164 @@
+{
+  "status": "loss_scale_audit_complete",
+  "timestamp_local": "2026-09-11",
+  "seed": 20260911,
+  "torch_version": "2.4.1+cu124",
+  "cuda_available": true,
+  "device": "cuda",
+  "fixed_shapes": {
+    "original": [
+      2,
+      1,
+      64,
+      80
+    ],
+    "enhanced": [
+      2,
+      1,
+      64,
+      80
+    ],
+    "curve": [
+      2,
+      8,
+      10,
+      13
+    ]
+  },
+  "spatial": {
+    "local": 0.018898354843258858,
+    "official": 0.07559341192245483,
+    "ratio_official_over_local": 3.999999605755069,
+    "local_grad_norm": 0.00601750266257028,
+    "official_grad_norm": 0.02407001065028112,
+    "ratio_grad_norm": 4.0
+  },
+  "exposure": {
+    "local": 0.00972139835357666,
+    "official": 0.00972139835357666,
+    "ratio_official_over_local": 1.0,
+    "local_grad_norm": 0.0019486973633083262,
+    "official_grad_norm": 0.0019486973633083262,
+    "ratio_grad_norm": 1.0
+  },
+  "tv": {
+    "local": 2.5620813369750977,
+    "official": 20.49665069580078,
+    "ratio_official_over_local": 8.0,
+    "local_grad_norm": 0.22371648697308633,
+    "official_grad_norm": 1.7897318957846906,
+    "ratio_grad_norm": 8.0
+  },
+  "weighted_profiles": {
+    "paper": {
+      "spa": 0.018898354843258858,
+      "exp": 0.00972139835357666,
+      "tv": 2.5620813369750977,
+      "weights": {
+        "spa": 1.0,
+        "exp": 1.0,
+        "tv": 20.0
+      },
+      "weighted_contributions": {
+        "spa": 0.018898354843258858,
+        "exp": 0.00972139835357666,
+        "tv": 51.24162673950195
+      },
+      "weighted_total": 51.27024649269879
+    },
+    "official_scaling": {
+      "spa": 0.018898354843258858,
+      "exp": 0.00972139835357666,
+      "tv": 2.5620813369750977,
+      "weights": {
+        "spa": 1.0,
+        "exp": 10.0,
+        "tv": 200.0
+      },
+      "weighted_contributions": {
+        "spa": 0.018898354843258858,
+        "exp": 0.0972139835357666,
+        "tv": 512.4162673950195
+      },
+      "weighted_total": 512.5323797333986
+    },
+    "official_code_scale_with_paper_written_weights": {
+      "spa": 0.07559341192245483,
+      "exp": 0.00972139835357666,
+      "tv": 20.49665069580078,
+      "weights": {
+        "spa": 1.0,
+        "exp": 1.0,
+        "tv": 20.0
+      },
+      "weighted_contributions": {
+        "spa": 0.07559341192245483,
+        "exp": 0.00972139835357666,
+        "tv": 409.9330139160156
+      },
+      "weighted_total": 410.01832872629166
+    }
+  },
+  "amp_vs_fp32": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "fp32": {
+      "total": 0.038176510483026505,
+      "spa": 0.0002803453535307199,
+      "exp": 0.00296436226926744,
+      "tv": 4.1262708691647276e-05,
+      "grad_norm": 1.248560378961082,
+      "enhanced_mean": 0.5490474700927734,
+      "curve_abs_max": 0.28978297114372253
+    },
+    "amp_all_ops": {
+      "total": 0.03817576915025711,
+      "spa": 0.0002805822587106377,
+      "exp": 0.0029641662258654833,
+      "tv": 4.126761996303685e-05,
+      "grad_norm": 1.2483703132933148,
+      "enhanced_mean": 0.5490575432777405,
+      "curve_abs_max": 0.2897670865058899
+    },
+    "amp_strict_fp32_loss": {
+      "total": 0.038175612688064575,
+      "spa": 0.0002804284740705043,
+      "exp": 0.0029641662258654833,
+      "tv": 4.126761996303685e-05,
+      "grad_norm": 1.248376105431244,
+      "enhanced_mean": 0.5490575432777405,
+      "curve_abs_max": 0.2897670865058899
+    },
+    "relative_total_difference": 1.941855764223191e-05,
+    "relative_grad_norm_difference": 0.00015222785455140637,
+    "strict_loss_relative_total_difference": 2.3516946692351207e-05,
+    "strict_loss_relative_grad_norm_difference": 0.00014758880142519458,
+    "note": "The trainer keeps the forward pass under AMP but disables autocast for loss reductions when --loss-compute-fp32 is set."
+  },
+  "official_source_urls": {
+    "model.py": "https://raw.githubusercontent.com/Li-Chongyi/Zero-DCE/master/Zero-DCE_code/model.py",
+    "Myloss.py": "https://raw.githubusercontent.com/Li-Chongyi/Zero-DCE/master/Zero-DCE_code/Myloss.py",
+    "lowlight_train.py": "https://raw.githubusercontent.com/Li-Chongyi/Zero-DCE/master/Zero-DCE_code/lowlight_train.py",
+    "dataloader.py": "https://raw.githubusercontent.com/Li-Chongyi/Zero-DCE/master/Zero-DCE_code/dataloader.py"
+  },
+  "local_file_fingerprints": {
+    "scripts/enhance_gray_dce_cleanroom.py": {
+      "sha256": "157f1abe5799314fdbd9da2d1025fda08362eef4b71a9711ec9723cde52b1131",
+      "bytes": 9914
+    },
+    "scripts/train_gray_dce_cleanroom.py": {
+      "sha256": "627d35b6bba99054bf7ff0385dc3dbfd2fa40cd92c1421a18cc28c289cb502b2",
+      "bytes": 37698
+    },
+    "references/third_party/Zero-DCE/model.py": {
+      "sha256": "8adcc8b73b5bfdb1b6e5a16e672c59a7f8f664ee21aafc3eea44bb316d4b97f8",
+      "bytes": 1772
+    }
+  },
+  "interpretation": {
+    "spatial": "For grayscale C=1, official L_spa returns four directional terms and the trainer applies mean; the local mean over the four stacked directions is therefore 4x smaller.",
+    "exposure": "For grayscale C=1, local and official exposure losses are algebraically equivalent.",
+    "tv": "Official L_TV sums over curve channels before spatial normalization; averaging over 8 channels locally makes it 8x smaller for an 8-channel map.",
+    "scale16": "The supplied IR-VIO main PDF visibly specifies single-channel input and pixelwise curve maps but does not expose a downsample=16 implementation detail; scale=16 remains a clean-room hypothesis pending supplementary/source evidence."
+  }
+}

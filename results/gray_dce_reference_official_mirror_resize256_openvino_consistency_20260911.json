@@ -1,0 +1,19 @@
+{
+  "status": "onnx_openvino_consistency_pass",
+  "model": "D:\\大论文实验\\IR-VIO的复现\\.deps\\gray_dce_reference_official_mirror_resize256_best_480x752.onnx",
+  "input": "D:\\大论文实验\\IR-VIO的复现\\tmp\\gray_dce_reference_onnx_check\\input.npy",
+  "shape": [
+    1,
+    1,
+    480,
+    752
+  ],
+  "max_abs": 2.384185791015625e-07,
+  "mean_abs": 1.4859603325589887e-08,
+  "rmse": 2.9461643791250935e-08,
+  "ort_min": 3.769416707655182e-07,
+  "ort_max": 0.9999998211860657,
+  "openvino_min": 3.769416707655182e-07,
+  "openvino_max": 0.9999998211860657,
+  "tolerance_max_abs": 0.0001
+}

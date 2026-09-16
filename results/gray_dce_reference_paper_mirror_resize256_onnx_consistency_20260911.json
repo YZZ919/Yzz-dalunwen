@@ -1,0 +1,30 @@
+{
+  "status": "onnxruntime_consistency_pass",
+  "onnx": "D:\\大论文实验\\IR-VIO的复现\\.deps\\gray_dce_reference_paper_mirror_resize256_best_480x752.onnx",
+  "input": "D:\\大论文实验\\IR-VIO的复现\\tmp\\gray_dce_reference_paper_onnx_check\\input.npy",
+  "reference": "D:\\大论文实验\\IR-VIO的复现\\tmp\\gray_dce_reference_paper_onnx_check\\pytorch.npy",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "input_shape": [
+    1,
+    1,
+    480,
+    752
+  ],
+  "output_shape": [
+    1,
+    1,
+    480,
+    752
+  ],
+  "max_abs_difference": 2.980232238769531e-07,
+  "mean_abs_difference": 1.873311283873136e-08,
+  "rmse": 3.419354044353895e-08,
+  "reference_mean": 0.5724005699157715,
+  "onnx_mean": 0.5724005699157715,
+  "reference_min": 3.8568163063246175e-07,
+  "reference_max": 0.9999998211860657,
+  "onnx_min": 3.856816874758806e-07,
+  "onnx_max": 0.9999998211860657
+}

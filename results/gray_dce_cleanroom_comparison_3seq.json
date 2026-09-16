@@ -1,0 +1,238 @@
+{
+  "status": "gray_dce_cleanroom_training_and_euroc_comparison",
+  "profiles": [
+    "official",
+    "paper"
+  ],
+  "sequences": [
+    "V1_01_easy",
+    "V1_03_difficult",
+    "V2_03_difficult"
+  ],
+  "training": [
+    {
+      "profile": "official",
+      "checkpoint_dir": "D:\\大论文实验\\IR-VIO的复现\\checkpoints\\gray_dce_cleanroom\\gray_official_mirror",
+      "best_checkpoint": "D:\\大论文实验\\IR-VIO的复现\\checkpoints\\gray_dce_cleanroom\\gray_official_mirror\\best_val.pth",
+      "best_checkpoint_exists": true,
+      "history_epochs": 100,
+      "best_epoch": 100,
+      "best_val_loss": 0.2315814273154482,
+      "best_val_spa": 0.008391310599573116,
+      "best_val_exp": 0.020703316804893474,
+      "best_val_tv": 8.078471774810014e-05,
+      "final_epoch": 100,
+      "final_train_loss": 0.16646994720842387,
+      "final_val_loss": 0.2315814273154482,
+      "training_config": {
+        "status": "cleanroom_grayscale_training_not_official_irvio",
+        "data_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray",
+        "train_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray/train",
+        "val_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray/val",
+        "train_count": 259,
+        "val_count": 47,
+        "loss_profile": "official",
+        "loss_weights": {
+          "spa": 1.0,
+          "exp": 10.0,
+          "tv": 200.0
+        },
+        "input_channels": 1,
+        "curve_channels": 8,
+        "curve_iterations": 8,
+        "downsample_scale": 16,
+        "crop_size": 512,
+        "batch_size": 8,
+        "optimizer": "Adam",
+        "learning_rate": 0.0001,
+        "epochs_requested": 100,
+        "exposure_target": 0.6,
+        "exposure_patch_size": 16,
+        "device": "cuda",
+        "amp": true,
+        "seed": 20260911,
+        "init_rgb_checkpoint": null,
+        "torch_version": "2.4.1+cu124",
+        "cuda_available": true
+      }
+    },
+    {
+      "profile": "paper",
+      "checkpoint_dir": "D:\\大论文实验\\IR-VIO的复现\\checkpoints\\gray_dce_cleanroom\\gray_paper_mirror",
+      "best_checkpoint": "D:\\大论文实验\\IR-VIO的复现\\checkpoints\\gray_dce_cleanroom\\gray_paper_mirror\\best_val.pth",
+      "best_checkpoint_exists": true,
+      "history_epochs": 100,
+      "best_epoch": 91,
+      "best_val_loss": 0.03054581459690916,
+      "best_val_spa": 0.007991908851297611,
+      "best_val_exp": 0.020907371086960145,
+      "best_val_tv": 8.232675200486754e-05,
+      "final_epoch": 100,
+      "final_train_loss": 0.02433737661890887,
+      "final_val_loss": 0.030707722252353707,
+      "training_config": {
+        "status": "cleanroom_grayscale_training_not_official_irvio",
+        "data_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray",
+        "train_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray/train",
+        "val_root": "/mnt/d/大论文实验/IR-VIO的复现/datasets/sice_gray/val",
+        "train_count": 259,
+        "val_count": 47,
+        "loss_profile": "paper",
+        "loss_weights": {
+          "spa": 1.0,
+          "exp": 1.0,
+          "tv": 20.0
+        },
+        "input_channels": 1,
+        "curve_channels": 8,
+        "curve_iterations": 8,
+        "downsample_scale": 16,
+        "crop_size": 512,
+        "batch_size": 8,
+        "optimizer": "Adam",
+        "learning_rate": 0.0001,
+        "epochs_requested": 100,
+        "exposure_target": 0.6,
+        "exposure_patch_size": 16,
+        "device": "cuda",
+        "amp": true,
+        "seed": 20260911,
+        "init_rgb_checkpoint": null,
+        "torch_version": "2.4.1+cu124",
+        "cuda_available": true
+      }
+    }
+  ],
+  "test_summary": {
+    "official": {
+      "requested": 3,
+      "completed": 3,
+      "successful": 3,
+      "success_rate": 1.0,
+      "mean_ate_rmse_se3_m": 0.13184994946167325,
+      "median_ate_rmse_se3_m": 0.13810860279861367,
+      "mean_baseline_ate_rmse_se3_m": 0.17184765776631095,
+      "mean_tw_ate_rmse_se3_m": 0.19364371421882914,
+      "reduction_of_mean_vs_baseline_pct": 23.27509657363445,
+      "reduction_of_mean_vs_tw_pct": 31.91106151130999,
+      "mean_reduction_vs_baseline_pct": 18.902701229837273,
+      "mean_reduction_vs_tw_pct": 22.23014724871865
+    },
+    "paper": {
+      "requested": 3,
+      "completed": 3,
+      "successful": 3,
+      "success_rate": 1.0,
+      "mean_ate_rmse_se3_m": 0.16362735236778173,
+      "median_ate_rmse_se3_m": 0.20381198874221176,
+      "mean_baseline_ate_rmse_se3_m": 0.17184765776631095,
+      "mean_tw_ate_rmse_se3_m": 0.19364371421882914,
+      "reduction_of_mean_vs_baseline_pct": 4.783484107597032,
+      "reduction_of_mean_vs_tw_pct": 15.500819105921046,
+      "mean_reduction_vs_baseline_pct": 4.448309020503924,
+      "mean_reduction_vs_tw_pct": 9.357510724453721
+    }
+  },
+  "test_rows": [
+    {
+      "profile": "official",
+      "sequence": "V1_01_easy",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 1389,
+      "time_coverage": 0.9604946786324521,
+      "ate_rmse_se3_m": 0.0574701547568828,
+      "baseline_ate_rmse_se3_m": 0.06529128682403589,
+      "tw_ate_rmse_se3_m": 0.05624082584151147,
+      "reduction_vs_baseline_pct": 11.978829714647109,
+      "reduction_vs_tw_pct": -2.1858301278071894
+    },
+    {
+      "profile": "official",
+      "sequence": "V1_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 977,
+      "time_coverage": 0.9180633150462065,
+      "ate_rmse_se3_m": 0.13810860279861367,
+      "baseline_ate_rmse_se3_m": 0.2505984771310602,
+      "tw_ate_rmse_se3_m": 0.2804728289606398,
+      "reduction_vs_baseline_pct": 44.88849079223079,
+      "reduction_vs_tw_pct": 50.758651627536025
+    },
+    {
+      "profile": "official",
+      "sequence": "V2_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 1095,
+      "time_coverage": 0.9434689475975018,
+      "ate_rmse_se3_m": 0.19997109082952325,
+      "baseline_ate_rmse_se3_m": 0.19965320934383676,
+      "tw_ate_rmse_se3_m": 0.24421748785433614,
+      "reduction_vs_baseline_pct": -0.15921681736607457,
+      "reduction_vs_tw_pct": 18.11762024642712
+    },
+    {
+      "profile": "paper",
+      "sequence": "V1_01_easy",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 1386,
+      "time_coverage": 0.9584335283112447,
+      "ate_rmse_se3_m": 0.05970589532831976,
+      "baseline_ate_rmse_se3_m": 0.06529128682403589,
+      "tw_ate_rmse_se3_m": 0.05624082584151147,
+      "reduction_vs_baseline_pct": 8.55457407474462,
+      "reduction_vs_tw_pct": -6.161128388429023
+    },
+    {
+      "profile": "paper",
+      "sequence": "V1_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 984,
+      "time_coverage": 0.9236499085643659,
+      "ate_rmse_se3_m": 0.20381198874221176,
+      "baseline_ate_rmse_se3_m": 0.2505984771310602,
+      "tw_ate_rmse_se3_m": 0.2804728289606398,
+      "reduction_vs_baseline_pct": 18.669901319623595,
+      "reduction_vs_tw_pct": 27.332715437182777
+    },
+    {
+      "profile": "paper",
+      "sequence": "V2_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 1095,
+      "time_coverage": 0.9434689475975018,
+      "ate_rmse_se3_m": 0.22736417303281364,
+      "baseline_ate_rmse_se3_m": 0.19965320934383676,
+      "tw_ate_rmse_se3_m": 0.24421748785433614,
+      "reduction_vs_baseline_pct": -13.879548332856443,
+      "reduction_vs_tw_pct": 6.900945124607408
+    }
+  ],
+  "profile_diff": {
+    "V1_01_easy": {
+      "official_ate_rmse_se3_m": 0.0574701547568828,
+      "paper_ate_rmse_se3_m": 0.05970589532831976,
+      "paper_minus_official_m": 0.00223574057143696,
+      "winner_lower_ate": "official"
+    },
+    "V1_03_difficult": {
+      "official_ate_rmse_se3_m": 0.13810860279861367,
+      "paper_ate_rmse_se3_m": 0.20381198874221176,
+      "paper_minus_official_m": 0.06570338594359809,
+      "winner_lower_ate": "official"
+    },
+    "V2_03_difficult": {
+      "official_ate_rmse_se3_m": 0.19997109082952325,
+      "paper_ate_rmse_se3_m": 0.22736417303281364,
+      "paper_minus_official_m": 0.027393082203290398,
+      "winner_lower_ate": "official"
+    }
+  },
+  "selection_rule": "best checkpoint selected by SICE validation loss only; EuRoC is test-only",
+  "warning": "Both profiles are clean-room grayscale DCE checkpoints trained from the stated architecture and mirror-derived data; neither is the unpublished author IR-VIO model."
+}

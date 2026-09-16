@@ -1,0 +1,40 @@
+experiment:
+  id: expNNN_short-name_YYYYMMDD
+  created_at: YYYY-MM-DDTHH:MM:SS+08:00
+  purpose: ""
+
+machine:
+  role: rtx4090-training
+  hostname: ""
+  gpu: NVIDIA GeForce RTX 4090
+  driver: ""
+  os: ""
+  python: ""
+  pytorch: ""
+  cuda_runtime: ""
+
+code:
+  project_commit: ""
+  project_dirty: false
+  vins_mono_commit: ""
+  vins_mono_dirty: false
+  exposure_control_commit: ""
+  exposure_control_dirty: false
+
+data:
+  name: ""
+  path: ""
+  manifest_or_checksum: ""
+  split: ""
+
+training:
+  entrypoint: scripts/train_gray_dce_cleanroom.py
+  arguments: []
+  seed: 20260911
+  resume_from: null
+
+artifacts:
+  checkpoint_uri: ""
+  log_uri: ""
+  result_uri: ""
+

@@ -1,0 +1,86 @@
+# Local dependencies and virtual environments
+/.deps/
+/.venv*/
+/.conda/
+/venv/
+/env/
+/ENV/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ROS / catkin / CMake build products
+/.catkin_workspace
+/build/
+/devel/
+/install/
+/.catkin_tools/
+/.ros/
+/src/CMakeLists.txt
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+
+# Datasets and local scratch space
+/datasets/
+/data/
+/tmp/
+
+# Model weights and training artifacts
+/checkpoints/
+/weights/
+/runs/
+/outputs/
+/logs/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.plan
+*.safetensors
+
+# Generated result trees can be very large. Keep only root-level summaries;
+# per-run metadata belongs in experiments/<experiment-id>/.
+/results/**
+!/results/*.csv
+!/results/*.json
+!/results/*.md
+!/results/*.xlsx
+
+# ROS recordings, databases, videos, and large captures
+*.bag
+*.bag.active
+*.db3
+*.mcap
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Editor and operating-system files
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# These are existing, independent repositories with their own histories.
+# Keep them out of the new root repository to avoid accidental gitlinks.
+/src/VINS-Mono/
+/src/Noise-AwareCameraExposureControl/

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-09-09",
+  "files": [
+    {
+      "sequence": "V1_01_easy",
+      "format": "ASL zip",
+      "url": "https://hf-mirror.com/datasets/pepijn223/euroc-mirror/resolve/main/V1_01_easy.zip?download=true",
+      "bytes": 1149702102,
+      "sha256": "a920fe5b5e69a6ad19b32f1cfaf90ac2f59d45dfd1ca18cc9722e07684ba45fa",
+      "local": "datasets/V1_01_easy.zip"
+    },
+    {
+      "sequence": "MH_01_easy",
+      "format": "ROS1 bag",
+      "url": "https://hf-mirror.com/datasets/kavehsgh/EuRoC_MAV_Dataset_Machine_Hall_Easy_01/resolve/main/MH_01_easy.bag?download=true",
+      "bytes": 2673818914,
+      "sha256": "57f440ccd68ec8dc8f9461269f5909656b86198bac3adfd677b1fcc7a1428fa9",
+      "local": "datasets/MH_01_easy.bag"
+    },
+    {
+      "sequence": "V1_02_medium,V1_03_difficult",
+      "format": "grouped ASL zip",
+      "url": "https://hf-mirror.com/datasets/GlowBond/EuRoC_MAV_Dataset/resolve/main/vicon_room1.zip?download=true",
+      "bytes": 6042263426,
+      "sha256": "fe73c27be6dc8ac00493b78b750d36b144daf49eea7fdf3163e934527c1b5297",
+      "local": "datasets/vicon_room1.zip"
+    },
+    {
+      "sequence": "V2_01_easy,V2_02_medium,V2_03_difficult",
+      "format": "grouped ASL zip",
+      "url": "https://hf-mirror.com/datasets/GlowBond/EuRoC_MAV_Dataset/resolve/main/vicon_room2.zip?download=true",
+      "bytes": 6013384949,
+      "sha256": "6daf2cbc2de9a6bc4e02866c99ed01c29a5c7c164756f06c4f72656192977cfc",
+      "local": "datasets/vicon_room2.zip"
+    },
+    {
+      "sequence": "MH_01_easy,MH_02_easy,MH_03_medium,MH_04_difficult,MH_05_difficult",
+      "format": "grouped ASL zip",
+      "url": "https://hf-mirror.com/datasets/GlowBond/EuRoC_MAV_Dataset/resolve/main/machine_hall.zip?download=true",
+      "bytes": 12683729426,
+      "sha256": "5ed7d07903f8d19b6c8808e2ae8a0872b281f6e34ef5497023b8ac58c3de0f6f",
+      "local": "datasets/machine_hall.zip"
+    }
+  ]
+}

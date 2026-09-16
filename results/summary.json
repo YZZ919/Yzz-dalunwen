@@ -1,0 +1,95 @@
+{
+  "dataset": "EuRoC MAV",
+  "attempted_sequences": 11,
+  "baseline_successful_sequences": 11,
+  "baseline_attempted_success_rate": 1.0,
+  "weighting_successful_sequences": 11,
+  "weighting_attempted_success_rate": 1.0,
+  "paper_sequences_total": 11,
+  "completed_fraction_of_paper_set": 1.0,
+  "full_set_success_rate": 1.0,
+  "comparable_sequences": 11,
+  "weighting_improved_sequences": 6,
+  "weighting_precision_win_rate": 0.5454545454545454,
+  "definition": "success = >=100 matched finite poses, >=70% camera-time coverage, finite SE(3)-aligned ATE",
+  "implementation_status": "clean-room equations (2)-(9); not official or full IR-VIO",
+  "sequences": [
+    {
+      "name": "MH_01_easy",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.15168780020680228,
+      "weighting_ate_rmse_se3_m": 0.16069134571909421,
+      "relative_reduction_percent": -5.935576559233521
+    },
+    {
+      "name": "MH_02_easy",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.18100428212449432,
+      "weighting_ate_rmse_se3_m": 0.1151121290633987,
+      "relative_reduction_percent": 36.40364321092423
+    },
+    {
+      "name": "MH_03_medium",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.1325259022906484,
+      "weighting_ate_rmse_se3_m": 0.14299172387747966,
+      "relative_reduction_percent": -7.897189459520306
+    },
+    {
+      "name": "MH_04_difficult",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.3905366256191222,
+      "weighting_ate_rmse_se3_m": 0.35807017001258484,
+      "relative_reduction_percent": 8.313293421601093
+    },
+    {
+      "name": "MH_05_difficult",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.5747518172751903,
+      "weighting_ate_rmse_se3_m": 0.49500654902907915,
+      "relative_reduction_percent": 13.87473094459643
+    },
+    {
+      "name": "V1_01_easy",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.06529128682403589,
+      "weighting_ate_rmse_se3_m": 0.05624082584151147,
+      "relative_reduction_percent": 13.861667341487651
+    },
+    {
+      "name": "V1_02_medium",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.19656208830293212,
+      "weighting_ate_rmse_se3_m": 0.19503065579730636,
+      "relative_reduction_percent": 0.7791087889062269
+    },
+    {
+      "name": "V1_03_difficult",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.2505984771310602,
+      "weighting_ate_rmse_se3_m": 0.2804728289606398,
+      "relative_reduction_percent": -11.921202463634941
+    },
+    {
+      "name": "V2_01_easy",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.11351355265474633,
+      "weighting_ate_rmse_se3_m": 0.11986268715866603,
+      "relative_reduction_percent": -5.593283229563539
+    },
+    {
+      "name": "V2_02_medium",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.1574785707114198,
+      "weighting_ate_rmse_se3_m": 0.1466876295803516,
+      "relative_reduction_percent": 6.852323514443536
+    },
+    {
+      "name": "V2_03_difficult",
+      "status": "success",
+      "baseline_ate_rmse_se3_m": 0.19965320934383676,
+      "weighting_ate_rmse_se3_m": 0.24421748785433614,
+      "relative_reduction_percent": -22.320842553425784
+    }
+  ]
+}

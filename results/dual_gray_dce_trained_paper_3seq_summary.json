@@ -1,0 +1,56 @@
+{
+  "status": "trained_cleanroom_gray_dce_euroc_summary",
+  "label": "dual_gray_dce_trained_paper",
+  "sequences_requested": [
+    "V1_01_easy",
+    "V1_03_difficult",
+    "V2_03_difficult"
+  ],
+  "completed": 3,
+  "successful": 3,
+  "success_rate": 1.0,
+  "mean_ate_rmse_se3_m": 0.16362735236778173,
+  "median_ate_rmse_se3_m": 0.20381198874221176,
+  "rows": [
+    {
+      "sequence": "V1_01_easy",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 1386,
+      "time_coverage": 0.9584335283112447,
+      "ate_rmse_se3_m": 0.05970589532831976,
+      "ate_mean_se3_m": 0.05509432202957445,
+      "baseline_ate_rmse_se3_m": 0.06529128682403589,
+      "tw_ate_rmse_se3_m": 0.05624082584151147,
+      "reduction_vs_baseline_pct": 8.55457407474462,
+      "reduction_vs_tw_pct": -6.161128388429023
+    },
+    {
+      "sequence": "V1_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 984,
+      "time_coverage": 0.9236499085643659,
+      "ate_rmse_se3_m": 0.20381198874221176,
+      "ate_mean_se3_m": 0.18545938970407214,
+      "baseline_ate_rmse_se3_m": 0.2505984771310602,
+      "tw_ate_rmse_se3_m": 0.2804728289606398,
+      "reduction_vs_baseline_pct": 18.669901319623595,
+      "reduction_vs_tw_pct": 27.332715437182777
+    },
+    {
+      "sequence": "V2_03_difficult",
+      "status": "complete",
+      "pipeline_success": true,
+      "matched_poses": 1095,
+      "time_coverage": 0.9434689475975018,
+      "ate_rmse_se3_m": 0.22736417303281364,
+      "ate_mean_se3_m": 0.20539369100243107,
+      "baseline_ate_rmse_se3_m": 0.19965320934383676,
+      "tw_ate_rmse_se3_m": 0.24421748785433614,
+      "reduction_vs_baseline_pct": -13.879548332856443,
+      "reduction_vs_tw_pct": 6.900945124607408
+    }
+  ],
+  "warning": "This is a clean-room trained checkpoint, not the unpublished author IR-VIO model."
+}
